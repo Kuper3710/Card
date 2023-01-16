@@ -1,0 +1,48 @@
+body{
+    background: black;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.cuadro{
+    display: grid;
+    justify-items: center;   
+    height: 160px;
+}
+
+.cuadro p{
+    margin-top: 12px;
+}
+
+
+div > img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.caja{
+    width: 630px;
+    height: 60px;
+    margin: 8px;
+}
+
+.anchor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 625px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
