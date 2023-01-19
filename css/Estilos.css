@@ -1,48 +1,81 @@
-body{
-    background: black;
-    color: white;
-    font-family: 'Dosis', sans-serif;
+*{
+    box-sizing: border-box;
 }
 
-.container{
+body{
+    background: #729b79;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.main-container{
     display: grid;
     justify-content: center;
     width: 100%;
 }
 
 .cuadro{
-    display: grid;
-    justify-items: center;   
-    height: 160px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
 }
 
-.cuadro p{
-    margin-top: 12px;
-}
-
-
-div > img{
+.cuadro > img{
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.hola{
+    margin-bottom: 16px;
+}
+
+.cuadro p:nth-child(2){
+    margin: 4px;
+}
+
+.cuadro p:nth-child(4){
+    width: 380px;
+    margin: 8px 0px;
+}
+
+.cuadro h1{
+    margin: 12px 0px;
 }
 
 .caja{
-    width: 630px;
-    height: 60px;
+    display: grid;
+    border: 1px solid white;
+    width: 625px;
+    height: 55px;
+    border-radius: 8px;
     margin: 8px;
 }
 
+.caja p{
+    margin: 0px;
+    text-align: center;
+}
+
 .anchor{
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
     align-items: center;
     justify-content: center;
-    width: 625px;
-    height: 55px;
-    border: 1px solid white;
-    border-radius: 8px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
+}
+
+.anchor img{
+    justify-self: center;
+    width: 42px;
+    height: 42px;
+}
+
+.anchor p{
+    font-size: 32px;
+    font-weight: 250;
 }
