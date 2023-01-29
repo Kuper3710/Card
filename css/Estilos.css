@@ -3,7 +3,7 @@
 }
 
 body{
-    background: #729b79;
+    background: black;
     color: white;
     font-family: 'Quicksand', sans-serif;
 }
@@ -12,15 +12,19 @@ body{
     display: grid;
     justify-content: center;
     width: 100%;
+    height: 100vh;
 }
 
-.cuadro{
+.first-box{
     display: flex;
     flex-direction: column;   
     align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-.cuadro > img{
+.first-box > img{
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -29,53 +33,41 @@ body{
     margin-bottom: 12px;
 }
 
-.hola{
-    margin-bottom: 16px;
-}
-
-.cuadro p:nth-child(2){
+.first-box p{
     margin: 4px;
 }
 
-.cuadro p:nth-child(4){
-    width: 380px;
-    margin: 8px 0px;
+.first-box h1{
+    margin: 0 24px;
 }
 
-.cuadro h1{
-    margin: 12px 0px;
+.second-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
-.caja{
-    display: grid;
-    border: 1px solid white;
-    width: 625px;
-    height: 55px;
-    border-radius: 8px;
-    margin: 8px;
-}
-
-.caja p{
-    margin: 0px;
-    text-align: center;
-}
-
-.anchor{
+.second-box a{
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    align-items: center;
+    border-radius: 16px;
     justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 100%;
     text-decoration: none;
     color: white;
+    margin: 8px;
+    cursor: pointer;
 }
 
-.anchor img{
-    justify-self: center;
-    width: 42px;
-    height: 42px;
+.second-box img{
+    justify-self: end;
+    width: 30px;
+    height: 30px;
 }
 
-.anchor p{
-    font-size: 32px;
-    font-weight: 250;
+.second-box p{
+    text-align: center;
 }
